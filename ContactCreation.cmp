@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <lightning:layout>
+    <lightning:layoutItem padding="around-small" size="5">
+        <div aria-labelledby="newContactform">
+        <fieldset class="slds-box slds-theme--default slds-container--small">
+       <legend id="newContactform" class="slds-text-heading-medium slds-p-vertical--medium">
+           <h2>Contact Details</h2>
+       </legend>   
+    <div class="slds-col slds-col--padded slds-p-top--medium">
+        <c:ContactCreationForm/> 
+    </div>     
+    </fieldset>
+        </div>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
