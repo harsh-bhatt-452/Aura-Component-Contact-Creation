@@ -1,0 +1,8 @@
+public class CreateContactClass {
+    @Auraenabled
+    public static Contact createContact(Contact contObj){
+        System.debug('contact:'+contObj.FirstName);
+        insert contObj;
+        return contObj;
+    }
+}
