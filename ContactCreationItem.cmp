@@ -1,0 +1,15 @@
+<aura:component>
+    <aura:attribute name="con" type="Contact"/>
+    <lightning:layout>
+    	<lightning:layoutItem padding="around-small" size="5">
+       			<legend id="newContactform" class="slds-text-heading-medium slds-p-vertical--medium">
+                    <h1><strong>Saved Contact Details :</strong></h1>
+       			</legend>   
+    		<p>First Name: <ui:outputText value="{!v.con.FirstName}"/></p>
+    		<p>Last Name: <ui:outputText value="{!v.con.LastName}"/></p>
+    		<p>Email Id: <ui:outputEmail value="{!v.con.Email}"/></p>
+    		<p>Phone: <ui:outputNumber value="{!v.con.Phone}"/></p>
+    		<p>Fax: <ui:outputNumber value="{!v.con.Fax}"/></p>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
