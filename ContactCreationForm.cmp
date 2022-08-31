@@ -1,0 +1,40 @@
+<aura:component controller="CreateContactClass">
+    <aura:attribute name="cont" type="Contact" default="{'sObjectType':'Contact',
+                                                        'FirstName':'',
+                                                        'LastName':'',
+                                                        'Email':'',
+                                                        'Phone':'',
+                                                        'Fax':''
+                                                        }"/>
+    <aura:attribute name="contactItem" type="Contact"/>
+
+	<form class="slds-form--stacked slds-media_center">
+    <lightning:input value="{!v.cont.FirstName}"
+                     type="text"
+                     label="First Name"
+                     placeholder="Enter First Name"/>
+    <lightning:input value="{!v.cont.LastName}"
+                     type="text"
+                     label="Last Name"
+                     required="true"
+                     placeholder="Enter Last Name"/>
+    <lightning:input value="{!v.cont.Email}"
+                     type="email"
+                     label="Email"
+                     placeholder="Enter email Id"/>    
+    <lightning:input value="{!v.cont.Phone}"
+                     type="number"
+                     label="Phone"
+                     placeholder="Enter Phone number"/>
+    <lightning:input value="{!v.cont.Fax}"
+                     type="number"
+                     label="Fax"
+                     placeholder="Enter Fax number"/>    
+    <lightning:button class="slds-m-top--medium"
+                      variant="brand"
+                      label="Save"
+                      title="Save"
+                      onclick="{!c.doSave}"/>
+    </form>
+    <c:ContactCreationItem con="{!v.contactItem}"/>
+</aura:component>
