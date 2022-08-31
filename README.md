@@ -8,5 +8,6 @@
  3. ContactCreation.cmp => consists of form component and cosmetic tags for UI
  4. ContactCreationForm.cmp => takes user input via a form and calls onclick function to save the record.
  5. ContactCreationFormController.js => saves the records and calls helper methods to display success or failure messages.
- 6. ContactCreationFormHelper.js => shows the success and failure toast messages.
- 7. ContactCreationItem.cmp => shows the saved contact details in the output.
+ 6. ContactCreationClass.apxc => Apex class that takes the input form and saved the record in salesforce.
+ 7. ContactCreationFormHelper.js => shows the success and failure toast messages.
+ 8. ContactCreationItem.cmp => shows the saved contact details in the output.
